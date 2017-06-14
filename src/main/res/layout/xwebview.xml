@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/weblinear"
+        android:id="@+id/web_view"></WebView>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/weblinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/webwrite"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:src="@mipmap/write"/>
+
+        <ImageView
+            android:id="@+id/webpinglun"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:src="@mipmap/pinglun"/>
+
+        <ImageView
+            android:id="@+id/webfenxiang"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:src="@mipmap/fenxiang"/>
+    </LinearLayout>
+
+</RelativeLayout>
